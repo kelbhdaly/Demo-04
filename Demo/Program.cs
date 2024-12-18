@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            int[] Numbers; // stack
+            #region One D Array
+            //int[] Numbers; // stack
             //Declare For Reference(Pointer) From type Array Of Integers
             //Numbers : Can Refere To Object From Array of Integers
             // Refere To Null
@@ -13,7 +14,7 @@
 
 
             //Numbers = new int[Size];
-            Numbers = new int[5];
+            //Numbers = new int[5];
             //new 
             //1- Number Of Required Bytes Of The Object At Heap (20)
             //2- Initialized Allocated With The Defult Value of The Date Type
@@ -36,17 +37,93 @@
 
             //int[] Numbers02 = { 1, 2, 3, 4, 5, 6, };
             //int[] Numbers03 = new int[5] { 1, 2, 6, 5, 6 };
-            Console.WriteLine("Enter the number in array");
-            for (int i = 0; i < Numbers.Length; i++)
-            {
-                Console.WriteLine($"Enter the number [{i}]");
+            //Console.WriteLine("Enter the number in array");
+            //for (int i = 0; i < Numbers.Length; i++)
+            //{
+            //    Console.WriteLine($"Enter the number [{i}]");
 
-                Numbers[i] = int.Parse(Console.ReadLine());
-            }
-            Console.WriteLine("===============================");
-            for (int i = 0; i < Numbers.Length; i++)
+            //    Numbers[i] = int.Parse(Console.ReadLine());
+            //}
+            //Console.WriteLine("===============================");
+            //for (int i = 0; i < Numbers.Length; i++)
+            //{
+            //    Console.WriteLine(Numbers[i]);
+
+            //} 
+            #endregion
+
+            #region Two D Array
+            //int[,] Marks = new int[3, 3];
+            //Marks[0, 0] = 1;
+            //Marks[0, 1] = 2;
+            //Marks[0, 2] = 3;
+
+            //Marks[1, 0] = 1;
+            //Marks[1, 1] = 2;
+            //Marks[1, 2] = 3;
+
+            //Marks[2, 0] = 1;
+            //Marks[2, 1] = 2;
+            //Marks[2, 2] = 3;
+
+            //Console.WriteLine(Marks[0,0]);
+            //Console.WriteLine(Marks[0, 1]);
+            //Console.WriteLine(Marks[0, 2]);
+
+            //Console.WriteLine(Marks[1, 0]);
+            //Console.WriteLine(Marks[1, 1]);
+            //Console.WriteLine(Marks[1, 2]);
+
+            //Console.WriteLine(Marks[2, 0]);
+            //Console.WriteLine(Marks[2, 1]);
+            //Console.WriteLine(Marks[2, 2]);
+
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    for (int j = 0; j < 3; j++)
+            //    {
+            //        Console.WriteLine($"Enter {i} {j} : ");
+            //        Marks[i, j] =int.Parse(Console.ReadLine());
+            //    }
+            //}
+
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    for (int j = 0; j < 3; j++)
+            //    {
+            //        Console.Write($"{Marks[i , j] } ");
+            //    }
+            //    Console.WriteLine();
+            //} 
+            #endregion
+
+            //int[][] Marks = new int[3][];
+            //Marks[0] = new int[] { 1, 2, 3 };
+            //Marks[1] = new int[] { 2, 6 };
+            //Marks[2] = new int[] { 20, 30, 40, 50 };
+
+            int[][] Marks = new int[3][];
+            Marks[0] = new int[3];
+            Marks[1]= new int[1];
+            Marks[2]= new int[5];
+
+            for (int i = 0; i < Marks.Length; i++) 
             {
-                Console.WriteLine(Numbers[i]);
+                for(int j = 0; j < Marks[i].Length; j++)
+                {
+                    Console.Write($"Enter the number {i} {j} : ");
+                    Marks[i][j] = int.Parse(Console.ReadLine());
+                }
+            }
+
+            for (int i = 0; i < Marks.Length; i++)
+            {
+                for (int j = 0; j < Marks[i].Length; j++)
+                {
+                    Console.Write($" {Marks[i] [j]} : ");
+                    
+                }
+                Console.WriteLine();
 
             }
         }
