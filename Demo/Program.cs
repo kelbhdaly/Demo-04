@@ -47,6 +47,7 @@
             for (int i = 0; i < Numbers.Length; i++)
             {
                 Console.WriteLine(Numbers[i]);
+
             }
         }
     }
