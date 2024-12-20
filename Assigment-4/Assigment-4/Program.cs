@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using System.Threading.Channels;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Assigment_4
 {
@@ -85,10 +86,26 @@ namespace Assigment_4
         //}
 
 
+        //--------------------------------------------------------------------------
 
 
+        //static bool IsPrime(int Number)
+        //{
+        //    if (Number < 2)
+        //    {
+        //        return false;
+        //    }
 
-
+        //    for (int i = 2; i <= Number / 2; i++)
+        //    {
+        //        if (Number % i == 0)
+        //        {
+        //            return false;
+        //        }
+               
+        //    }
+        //    return true;
+        //}
         static void Main(string[] args)
         {
             #region Q01
@@ -170,6 +187,27 @@ namespace Assigment_4
             //int Digital = IndividualDigits(Number);
             //Console.WriteLine($"The sum of the digits of the number {Number} is : {Digital}");
             #endregion
+
+            #region Q05
+            // Create a function named "IsPrime", which receives an integer number and retuns true if it is prime, or false if it is not:
+
+
+            //Console.WriteLine("Enter The Number : =");
+            //int Number = int.Parse(Console.ReadLine());
+
+            //if (IsPrime(Number))
+            //{
+            //    Console.WriteLine("The Number is Prime");
+
+            //}
+            //else
+            //{
+            //    Console.WriteLine("The Number is Not Prime");
+
+            //}
+            #endregion
+
+
         }
     }
 }
