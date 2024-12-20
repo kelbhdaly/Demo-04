@@ -102,10 +102,33 @@ namespace Assigment_4
         //        {
         //            return false;
         //        }
-               
+
         //    }
         //    return true;
         //}
+
+
+
+        //--------------------------------------------------------------
+
+        //static void MinMaxArray(int[] array, ref int Min, ref int Max)
+        //{
+
+        //    Min = array[0];
+        //    Max = array[0];
+
+
+        //    for (int i = 1; i < array.Length; i++)
+        //    {
+        //        if (array[i] < Min)
+        //            Min = array[i];
+        //        if (array[i] > Max)
+        //            Max = array[i];
+        //    }
+        //}
+
+        //------------------------------------------------
+
         static void Main(string[] args)
         {
             #region Q01
@@ -207,7 +230,15 @@ namespace Assigment_4
             //}
             #endregion
 
+            #region Q06
+            //Create a function named MinMaxArray, to return the minimum and maximum values stored in an array, using reference parameters
 
+            //int[] Numbers = { 1, 2, 3, 5 };
+            //int Min = 0, Max = 0;
+            //MinMaxArray(Numbers, ref Min, ref Max);
+            //Console.WriteLine($"The Max is : {Max}");
+            //Console.WriteLine($"The Min is : {Min}");
+            #endregion
         }
     }
 }
