@@ -50,7 +50,7 @@ namespace Assigment_4
         //{
         //    ;
         //    int sum = 0;
-           
+
         //    arr[0] = 100;
         //    for (int i = 0; i < arr.Length; i++)
         //    {
@@ -59,12 +59,36 @@ namespace Assigment_4
         //    return sum;
         //}
 
-       //static void SumAndSub4Numbers(int Num01 , int Num02, int Num03 , int Num04 ,  out int Sum , out int Sub)
-       // {
 
-       //     Sum = Num01 + Num02 ;
-       //     Sub = Num03 - Num04;
-       // }
+
+        //-----------------------------------------------------
+
+        //static void SumAndSub4Numbers(int Num01 , int Num02, int Num03 , int Num04 ,  out int Sum , out int Sub)
+        // {
+
+        //     Sum = Num01 + Num02 ;
+        //     Sub = Num03 - Num04;
+        // }
+
+
+        //-------------------------------------------------------------------------------------
+        //static int IndividualDigits(int Number)
+        //{
+        //    int sum = 0;
+        //    while (Number != 0)
+        //    {
+        //        sum += Number % 10;
+        //        Number /= 10;
+
+        //    }
+        //    return sum;
+        //}
+
+
+
+
+
+
         static void Main(string[] args)
         {
             #region Q01
@@ -129,6 +153,22 @@ namespace Assigment_4
             //SumAndSub4Numbers(Number01, Number02, Number03, Number04, out Sum, out Sub);
             //Console.WriteLine($"Sum = {Sum}");
             //Console.WriteLine($"Sub = {Sub}");
+            #endregion
+
+
+            #region Q04
+
+            //Write a program in C# Sharp to create a function to calculate the sum of the individual digits of a given number.
+            //    Output should be like
+            //    Enter a number: 25
+            //    The sum of the digits of the number 25 is: 7
+
+            //Console.WriteLine("Enter The Number : = ");
+            //int Number = int.Parse(Console.ReadLine());
+
+
+            //int Digital = IndividualDigits(Number);
+            //Console.WriteLine($"The sum of the digits of the number {Number} is : {Digital}");
             #endregion
         }
     }
