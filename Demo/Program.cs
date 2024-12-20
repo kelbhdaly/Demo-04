@@ -40,9 +40,26 @@
         //    }
         //}
 
-       static int SumNumbers(int Number01 , int Number02)
+        //static int SumNumbers(int Number01 , int Number02)
+        // {
+        //     return Number01 + Number02;
+        // }
+
+        //static void Swap(int x, int y)
+        // {
+        //     int Temp;
+        //     Temp = x;
+        //     x = y;
+        //     y = Temp;
+
+        // }
+        static void Swap( ref int x, ref int y)
         {
-            return Number01 + Number02;
+            int Temp;
+            Temp = x;
+            x = y;
+            y = Temp;
+
         }
         //Entery point
         static void Main(string[] args)
@@ -173,6 +190,7 @@
             //}
             #endregion
 
+            #region Function 
             // Function : Block of code 
 
             //Function Prototype
@@ -184,10 +202,25 @@
 
             //calling For The Functions
             //PrintShap(5 , "khaled"); //Passing By Order
-           // PrintShap(Pattern:"ayhaga",count: 5); //Passing By Name
-           //var sum =SumNumbers(1, 2);
-           // Console.WriteLine(sum);
-           // Console.WriteLine(SumNumbers(2,3));
+            // PrintShap(Pattern:"ayhaga",count: 5); //Passing By Name 
+            //var sum =SumNumbers(1, 2);
+            // Console.WriteLine(sum);
+            // Console.WriteLine(SumNumbers(2,3));
+            #endregion
+
+            //Passing Paramters value Type
+
+            //1- Passing By Value
+
+            //int A = 3, B = 6;
+            //Swap(  A, B);
+            //Console.WriteLine($" A = { A } B = {B}");
+
+            //2- Passing By Reference
+
+            //int A = 3, B = 6;
+            //Swap(ref A, ref B);
+            //Console.WriteLine($" A = {A} B = {B}");
         }
     }
 }
