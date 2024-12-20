@@ -36,18 +36,18 @@
 
             //int[] Numbers02 = { 1, 2, 3, 4, 5, 6, };
             //int[] Numbers03 = new int[5] { 1, 2, 6, 5, 6 };
-            Console.WriteLine("Enter the number in array");
-            for (int i = 0; i < Numbers.Length; i++)
-            {
-                Console.WriteLine($"Enter the number [{i}]");
+            //Console.WriteLine("Enter the number in array");
+            //for (int i = 0; i < Numbers.Length; i++)
+            //{
+            //    Console.WriteLine($"Enter the number [{i}]");
 
-                Numbers[i] = int.Parse(Console.ReadLine());
-            }
-            Console.WriteLine("===============================");
-            for (int i = 0; i < Numbers.Length; i++)
-            {
-                Console.WriteLine(Numbers[i]);
-            }
+            //    Numbers[i] = int.Parse(Console.ReadLine());
+            //}
+            //Console.WriteLine("===============================");
+            //for (int i = 0; i < Numbers.Length; i++)
+            //{
+            //    Console.WriteLine(Numbers[i]);
+            //}
         }
     }
 }
