@@ -58,6 +58,13 @@ namespace Assigment_4
         //    }
         //    return sum;
         //}
+
+       //static void SumAndSub4Numbers(int Num01 , int Num02, int Num03 , int Num04 ,  out int Sum , out int Sub)
+       // {
+
+       //     Sum = Num01 + Num02 ;
+       //     Sub = Num03 - Num04;
+       // }
         static void Main(string[] args)
         {
             #region Q01
@@ -100,6 +107,28 @@ namespace Assigment_4
             //By Value: A copy is made; changes do not affect the original.
             // By Reference: A reference to the original is passed; changes affect the original.
 
+            #endregion
+
+
+            #region Q03
+            // Write a c# Function that accept 4 parameters from user and return result of summation and subtracting of two numbers
+            //Console.WriteLine("Enter The Number01");
+            //int Number01 =int.Parse(Console.ReadLine());
+
+            //Console.WriteLine("Enter The Number02");
+            //int Number02 = int.Parse(Console.ReadLine());
+
+            //Console.WriteLine("Enter The Number03");
+            //int Number03 = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter The Number04");
+            //int Number04 = int.Parse(Console.ReadLine());
+            //int Sum, Sub;
+
+
+
+            //SumAndSub4Numbers(Number01, Number02, Number03, Number04, out Sum, out Sub);
+            //Console.WriteLine($"Sum = {Sum}");
+            //Console.WriteLine($"Sub = {Sub}");
             #endregion
         }
     }
