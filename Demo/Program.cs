@@ -53,14 +53,25 @@
         //     y = Temp;
 
         // }
-        static void Swap( ref int x, ref int y)
-        {
-            int Temp;
-            Temp = x;
-            x = y;
-            y = Temp;
+        //static void Swap( ref int x, ref int y)
+        //{
+        //    int Temp;
+        //    Temp = x;
+        //    x = y;
+        //    y = Temp;
 
-        }
+        //}
+
+      //static  int SumArray( ref int[] arr)
+      //  {
+      //      int sum = 0;
+      //      arr[0] = 100;
+      //      for (int i = 0; i < arr.Length; i++)
+      //      {
+      //            sum += arr[i];
+      //      }
+      //      return sum;
+      //  }
         //Entery point
         static void Main(string[] args)
         {
@@ -208,6 +219,7 @@
             // Console.WriteLine(SumNumbers(2,3));
             #endregion
 
+            #region Passing Parameter Value Type
             //Passing Paramters value Type
 
             //1- Passing By Value
@@ -220,7 +232,21 @@
 
             //int A = 3, B = 6;
             //Swap(ref A, ref B);
-            //Console.WriteLine($" A = {A} B = {B}");
+            //Console.WriteLine($" A = {A} B = {B}"); 
+            #endregion
+
+
+            #region  Passing Parameter Reference Type
+            // 1. Passing By Value 
+            //int[] Numbers = { 1, 2, 3, 4 };
+            //int sum =SumArray(Numbers);
+            //Console.WriteLine(sum);
+
+            // 2. Passing By Reference
+            //int[] Numbers = { 1, 2, 3, 4 };
+            //int sum = SumArray(ref Numbers);
+            //Console.WriteLine(sum);
+            #endregion
         }
     }
 }
